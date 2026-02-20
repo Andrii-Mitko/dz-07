@@ -1,3 +1,5 @@
+
+
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
@@ -25,3 +27,14 @@ const images = [
   }
 ];
 
+  const galleries = document.querySelector('ul.gallery');
+for (const item of images) {
+
+const li = document.createElement('li');
+galleries.append(li);
+const img = document.createElement('img');
+li.append(img);
+ img.src = item.url;
+  img.alt = item.alt;
+
+}

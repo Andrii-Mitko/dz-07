@@ -13,3 +13,17 @@ body {
   line-height: 1.5;
 }
 
+
+.gallery {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+}
+.gallery > li {
+  flex: 1 1 calc(33.333% - 10px);
+}
+img {
+  width: 100%;
+}
